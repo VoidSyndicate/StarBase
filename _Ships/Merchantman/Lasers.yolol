@@ -1,0 +1,7 @@
+//Laser Automation
+if :Mine==1 then goto 3 end else goto 4 end
+:Laser=1 :Collect=1 :LaserVel=0.05 goto 2 
+:Laser=0 :Collect=0 :LaserVel=3
+:LTRR=-7 :LTPR=-7 :LTRL=7 :LTPL=-7 
+:LTRC=0 :LTPC=-33 :CTPL=-10 :CTPR=-10
+Goto 2

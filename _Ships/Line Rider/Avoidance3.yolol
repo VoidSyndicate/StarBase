@@ -1,0 +1,4 @@
+D=1000 goto:Avoidance
+if:RFRD<D AND:RFLD<D AND:RFDD<D AND:RFUD<D then goto3 else end goto4
+:SoundOn=1 goto1
+:Cruise=0 :Turtle=100 :FcuForward=:AvAdjust goto1

@@ -1,0 +1,4 @@
+C = "\nPower Delta:" D = "Current Power:"
+A = :StoredBatteryPower 
+B = :StoredBatteryPower E = B-A
+:Power = D+B+C+E goto 2

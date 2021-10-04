@@ -1,0 +1,2 @@
+D=1000 goto:Avoidance
+if :RFLD<D then :Cruise=100 :FcuRightLeft=100 else end goto1

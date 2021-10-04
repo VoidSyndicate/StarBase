@@ -1,0 +1,8 @@
+// General Ship Script - Mutleyx
+t=0 
+if :FcuForward==0 then t++ if t>100 then :PlasmaOn=0 end else t=0 end
+:WarnApproach=:AheadRange<500 if :Cruise!=0 then goto6 end
+if :FcuForward>50 then :Door=0 :Rod_Hatch=0 :access=0 :PlasmaOn=1 end
+:laser2 = :laser and :Battery > 2000 if :autopilot then :cruise=0 end
+:WarnCharge=:ChargeT!=1 :WarnBeacon=:insideSafezone==0 
+if :laser then :cruise=100 end goto 3

@@ -1,0 +1,7 @@
+// Power management ship script - Mutleyx
+s=0.001 fl=s lb=0
+b=:Battery m=100-(b/100)  if b>=lb then fl-=1 end lb=b
+if fl<=m then fl=m end  if fl<=0 then fl=s end 
+:FL1=fl*4 :FL2=fl*3 :FL3=fl*2 :FL4=fl*2 goto 3
+// The *numbers in the line above determine how fast each rod drains
+// If you want them all to drain at same speed, set them all the same

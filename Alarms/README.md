@@ -1,0 +1,1 @@
+Alarm scripts that will signal a speaker to notify you something is wrong.

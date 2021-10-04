@@ -1,0 +1,4 @@
+:GeneratorUnitRateLimit=:Prewarm+100-:StoredBatteryPower/100 goto1
+
+// Set a hybrid button `Prewarm` with off state of 0 and on state
+// equal to the generator minimum you want (e.g. 50).

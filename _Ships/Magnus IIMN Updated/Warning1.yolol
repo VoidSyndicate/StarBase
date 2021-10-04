@@ -1,0 +1,11 @@
+//WARNINGS 1
+if :TotalRods<1000000 then :TRod=0 goto 5  end
+if :TotalRods<3000000 then :TRod=1 goto 5 end
+if :TotalRods<6000000 then :TRod=2 goto 5 end
+if :TotalBatteries<25000 then :TBat=0 goto 8 end
+if :TotalBatteries<50000 then :TBat=1 goto 8 end
+if :TotalBatteries<100000 then :TBat=2 goto 8 end
+if :RadiationRate<50 then :RRate=2 goto 11 end
+if :RadiationRate<75 then :RRate=1 goto 11 end
+if :RadiationRate<100 then :RRate=0 goto 11 end
+goto1

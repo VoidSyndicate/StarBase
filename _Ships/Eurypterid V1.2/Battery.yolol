@@ -1,0 +1,6 @@
+if :StoredBatteryPower < 500 then goto 6 else goto 2 end
+if :StoredBatteryPower < 2000 then goto 5 else goto 3 end
+if :StoredBatteryPower > 5000 then goto 4 else goto 1 end
+:Battery = "Batteries charged mining ready" goto 1
+:Battery = "Batteries getting low" goto 1
+:Battery = "Batteries low stop laser" goto 1

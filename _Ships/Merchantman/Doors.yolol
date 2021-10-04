@@ -1,0 +1,3 @@
+//Doors Closer
+if :CloseAll==1 then goto 3 end else goto 1 end
+:DPort=1 :DSboard=1 :CloseAll=0 goto 1

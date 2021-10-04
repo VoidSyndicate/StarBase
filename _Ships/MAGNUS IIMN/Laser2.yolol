@@ -1,0 +1,9 @@
+Min=40 Max=20 Y=20 //Change these values to adjust laser angles
+if :Sweep==1 then goto 3 end else goto 2 end
+:Laser2Yaw=Min :Laser2Pitch=0
+if :Laser2CY==Min then goto 5 end else goto 6 end
+:Laser2Yaw=Max :Laser2Pitch=:Laser2Pitch+2 goto 8
+if :Laser2CY==Max then goto 7 end else goto 8 end
+:Laser2Yaw=Min :Laser2Pitch=:Laser2Pitch+2 goto 8
+if :Laser2CP>Y then :Laser2Pitch=-Y end
+if :Sweep==1 then goto 4 else goto 2 end

@@ -1,0 +1,5 @@
+ if :jON then d=1000 :rON=1 goto2 else d=-1000 end 
+:jA1=:jD1<d :jA2=:jD2<d :jA3=:jD3<d :jA4=:jD4<d :jA5=:jD5<d 
+:jA6=:jD6<d :jA7=:jD7<d :jA8=:jD8<d :jA9=:jD9<d :jA10=:jD10<d
+:jA11=:jD11<d :jA12=:jD12<d :jA0=:rD<d goto1
+//Collision Warning System

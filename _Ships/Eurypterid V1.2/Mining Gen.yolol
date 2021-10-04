@@ -1,0 +1,4 @@
+if :Mining == 0 then goto 2 else goto 1 end
+:DR = 0 
+
+:Turrets = -1 :Lasers = 0 goto 1

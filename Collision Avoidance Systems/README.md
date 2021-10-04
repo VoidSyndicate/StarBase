@@ -1,0 +1,1 @@
+Scripts that provide a ship with Collision Avoidance.

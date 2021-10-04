@@ -1,0 +1,2 @@
+if :idle then rate = 101 else rate = 120 end
+:FuelChamberUnitRateLimit=rate-:StoredBatteryPower/100 goto 1

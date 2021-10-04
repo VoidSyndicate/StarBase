@@ -1,0 +1,11 @@
+j="\nMat|Stacks" o=j a=" Ore" b="\n" d="#" e="~" h="ium" TO=20
+:Scanned-=s s=e :Scanned=s+:Scanned f=1728000 :Re=1 :sOn=0 goto2+:sAu
+:Scanned-=s s=d :Scanned=s+:Scanned g="ite" i=0 :I=0 :sOn=1 :R=0 :S=1
+tv=0 o=j c=" Crystal" i++ if i>TO then :sOn=0 goto9 end goto5-:S
+:L=0 i/=:R :I=0 v=:V/f*1000 tv+=v o+=b+"1:  "+(:M-a-c-g-h)+"|"+v
+i/=:R :I=1 v=:V/f*1000 tv+=v o+=b+"2:  "+(:M-a-c-g-h)+"|"+v
+i/=:R v=tv at="\nCLass:"+(4+v>10+v>11+v>18+v>26+v>124+v>270)
+i/=:R :Scanned=s+o+b+"Total Stacks:"+tv+at :S=0 :Re=1 goto2+:sAu
+w="\n" i/=:R :Scanned=s+w+"\n\n «TIMEOUT»\n"+w goto2+:sAu
+:Scanned=s+w+"\n\n  Nothing\n   Found\n"+w goto2+:sAu
+//Scanner Automation & Store

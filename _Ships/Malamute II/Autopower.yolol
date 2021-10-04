@@ -1,0 +1,19 @@
+if :AutoPower==1 then :GURL=:MinEps+(10000-:Battery)/100 end 
+if :GURL<100 then :GeneratorRate=:GURL end else :GeneratorRate=100 end
+goto 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

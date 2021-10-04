@@ -1,0 +1,19 @@
+S1="Unstable" S2="Critical" S3="Stable" msg1="\n!DAMAGE!" msg2=""
+L1="St: " L2="\nCl: " L4="\nWarp:" L5="\nErrors:"
+de=:de wc=:wc st=S3
+if :wc<0.4 then st=S2 else if :wc<1 then st=S1 end end
+if :Coolant==0 then sc="Radiator" else sc="Coolant" end
+if :de>0 then msg=msg1 else msg=msg2 end
+:ShipStatus=L1+st+L2+sc+L4+wc+L5+:de+msg goto1
+
+// ShipStatus by Pewpewpew
+// Rewritten by Tagarik
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+// Show ISAN deltas - appoximate change/second - Mutleyx
+x=0 y=0 z=0
+dx=:xx-x x=:xx dy=:yy-y y=:yy dz=:zz-z z=:zz 
+:Deltas = "\n\ndx="+dx/2+"\ndy="+dy/2+"\ndz="+dz/2 t=8
+if t-- > 0 then goto5 end goto3

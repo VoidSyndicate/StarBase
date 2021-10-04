@@ -1,0 +1,13 @@
+//Usermanual script2\\
+Goto:P
+:Manual="<Turtle>\nMakes the ship's movements slower" goto2
+:Manual="<ID>\nShip Transponder toggle" goto2
+:Manual="<Avoidance>\nAsteroid avoidance mode" goto2
+:Manual="<Cruise>\nSimilar to cruise control on cars" goto2
+:Manual="<Scanner>\nToggle for the asteroid scanner function" goto2
+:Manual="<Adjust Lever>\nAdjusts avoidance's forward speed" goto2
+:Manual="<Movement display>\nShip's current strafe direction" goto2
+:Manual="<Pos display>\nISAN Mono GPS" goto2
+:Manual="<Info display>\nDurability warning system" goto2
+:Manual="<Lights>\nToggle all the lights on the ship" goto2
+:P=2 goto2

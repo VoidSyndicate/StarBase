@@ -1,0 +1,3 @@
+2 devices needed:
+Button "Mine" for ativating scanner.
+Button "Sweep" for running the scanner.

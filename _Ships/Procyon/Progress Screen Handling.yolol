@@ -1,0 +1,5 @@
+if :cON then :Collector=:cPo else :Collector=:wm3 end
+if :jON then :CollisionWarning=:wm4 else :CollisionWarning=:wm3 end
+if :rON then :Rangefinder=:rD else :Rangefinder=:wm3 end 
+if :App then :Approach=:rD else :Approach=:wm8 end goto1
+//Progress Screen Handling

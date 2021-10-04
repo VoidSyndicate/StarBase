@@ -1,0 +1,2 @@
+t=(:M1T+:M2T+:M3T+:M4T+:M5T+:M6T+:M7T+:M8T+:M9T+:M10T+:M11T+:M12T)/12
+:Thrust=t goto1

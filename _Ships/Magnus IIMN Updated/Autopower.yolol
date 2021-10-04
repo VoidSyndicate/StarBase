@@ -1,0 +1,1 @@
+if :AutoPower==1 then :GURL=:MinEPS+(10000-:Bat)/100 end goto 1

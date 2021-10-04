@@ -1,0 +1,2 @@
+:GURL=((100-:Battery)^2)+:MinEPS+(:mAuto*75)+(:mMan*75) goto 1
+// Generator Rate Limiter

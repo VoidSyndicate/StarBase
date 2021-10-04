@@ -1,0 +1,2 @@
+if :Strength>0 then goto2 end :Distance="No signal" goto1
+:Distance=(1000000-:Strength)/1000 + " km" goto 1

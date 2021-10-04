@@ -1,0 +1,18 @@
+// Radar array update and target selection script - Mutleyx
+
+t=:Target :RUT=t :RDT=t :RPT=t :RST=t :RFT=t :RBT=t goto 3+:Select
+c=:Select1+:Select2+:Select3+:Select4+:Select5+:Select6
+if c==1 then goto 9 end
+:Select1=0 :Select2=0 :Select3=0 :Select4=0 :Select5=0 :Select6=0
+:Select=0 goto3
+
+g=:Select1+2*:Select2+3*:Select3+4*:Select4+5*:Select5+6*:Select6
+goto 10+g
+:Select1=0 :Target=:Signal1 :Select=0 goto18
+:Select2=0 :Target=:Signal2 :Select=0 goto18
+:Select3=0 :Target=:Signal3 :Select=0 goto18
+:Select4=0 :Target=:Signal4 :Select=0 goto18
+:Select5=0 :Target=:Signal5 :Select=0 goto18
+:Select6=0 :Target=:Signal6 :Select=0 goto18
+
+:Select=0 goto3

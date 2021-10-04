@@ -1,0 +1,1 @@
+:FuelChamberUnitRateLimit=(10000-:StoredBatteryPower)/10 goto1

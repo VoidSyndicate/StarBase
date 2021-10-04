@@ -1,0 +1,2 @@
+//Manatee MINEPS ButtonOn = 25
+:GeneratorRate=:MinEPS+(10000-:Battery)/75 goto 1

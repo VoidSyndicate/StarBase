@@ -1,0 +1,3 @@
+:TRS1 = 90 - ATAN ((888+:LD)/264) :TRS2 = - :TRS1
+:TPS1 = ATAN ((888+:LD)/228) - 90 :TPS2 = :TPS1
+:TPF = ATAN ((840+:LD)/300) :TPC = ATAN ((984+:LD)/400) goto 1

@@ -1,0 +1,6 @@
+pp=(:prop+1) fp=(:fuel+1)
+pl1=(:prop/(pp-:prop))/5 fl1=(:fuel/(fp-:fuel))/5
+pl2=(:prop/(pp-:prop))/2.5 fl2=(:fuel/(fp-:fuel))/2.5
+pl3=(:prop/(pp-:prop))/1.67 fl3=(:fuel/(fp-:fuel))/1.67
+pl=(pl1+pl2+pl3)/3 fl=(fl1+fl2+fl3)/3
+:pml="Propellant Minutes:\n"+pl/60 :fml="Fuel Minutes:\n"+fl/60 goto1

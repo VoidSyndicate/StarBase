@@ -1,0 +1,6 @@
+3 devices needed:
+Button "ScannerOn" for ativating scanner.
+Button "Scan" for running the scanner.
+Text Panel "LastScan" for showing results.
+
+Rename ChipWait on your basic yolol chip to C.

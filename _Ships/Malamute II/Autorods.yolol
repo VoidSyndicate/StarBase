@@ -1,0 +1,19 @@
+if :AutoRods!=1 then goto 7 end else goto 2 end
+if :FuelRod1>0 then :FURL1=100 :FURL2=0 end
+if :FuelRod3>0 then :FURL3=100 :FURL4=0 end
+if :FuelRod1==0 then :FURL1=0 :FURL2=100 end
+if :FuelRod3==0 then :FURL3=0 :FURL4=100 end
+goto 1
+if :Shutdown==0 then :FURL1=0 :FURL2=0 :FURL3=0 :FURL4=0 goto 1 end
+:FURL1=100 :FURL2=100 :FURL3=100 :FURL4=100 goto 1
+
+
+
+
+
+
+
+
+
+
+

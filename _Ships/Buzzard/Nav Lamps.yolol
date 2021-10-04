@@ -1,0 +1,20 @@
+// Nav lamps scripts - Mutleyx
+if :Lights == 0 then :NavLampS=0 :NavLampP=0 goto 2 end
+t=1 next=4  :NavLampS=0 goto 20
+t=1 next=5  :NavLampS=1 goto 20
+t=1 next=6  :NavLampS=0 goto 20
+t=2 next=7  :NavLampS=1 goto 20
+t=1 next=8  :NavLampP=0 goto 20
+t=1 next=9  :NavLampP=1 goto 20
+t=1 next=10  :NavLampP=0 goto 20
+t=1 next=2  :NavLampP=1 goto 20
+
+
+
+
+
+
+
+
+
+t-- if t > 0 then goto 20 end goto next

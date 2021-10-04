@@ -1,0 +1,4 @@
+//Mining turret convergence script Magnus IIIMN
+f=-3.45 a=7 b=0.571 c=57.295 d=1.571 ef=-1 ea=2.07
+r=:Ahead r*=r<:AL z/=r o=r+f t=o/a :CA=(b*t+t*t)/(1+2*b*t+t*t)*c*d-90
+h=SQRT(o*o+a*a) p=h+ef t=p/ea :EP=(b*t+t*t)/(1+2*b*t+t*t)*c*d-90 goto2

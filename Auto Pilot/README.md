@@ -1,0 +1,1 @@
+Scripts that will provide Auto Pilot for a ship. Taking you to a specific set of coordinates.

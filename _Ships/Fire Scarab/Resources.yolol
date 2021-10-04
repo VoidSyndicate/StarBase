@@ -1,0 +1,7 @@
+f="\n" a="Gas : " b="Fuel: " c="Cool: " d="Rad : " n=100 e="%"
+maxg=:GasNetworkMaxResource maxf=:FuelChamberMaxFuel
+maxc=:MaxCoolant maxr=1400
+gas=:GasNetworkStoredResource fuel=:FuelChamberFuel
+cool=:StoredCoolant radc=(:SC1+:SC2+:SC3+:SC4)/4
+gp=gas/maxg*n fp=fuel/maxf*n cp=cool/maxc*n rp=radc/maxr*n
+:Resources=f+a+gp/n*n+e+f+b+fp/n*n+e+f+c+cp/n*n+e+f+d+rp/n*n+e goto4

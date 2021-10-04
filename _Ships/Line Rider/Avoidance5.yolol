@@ -1,0 +1,2 @@
+D=1000 goto:Avoidance
+if :RFUD<D then :Cruise=100 :FcuUpDown=-100 else end goto1

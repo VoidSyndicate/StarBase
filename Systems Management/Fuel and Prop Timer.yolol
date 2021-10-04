@@ -1,0 +1,23 @@
+G2S=:GasNetworkStoredResource GCM=:GasNetworkMaxResource// Gas level
+F2S=:FuelChamberFuel FCM=:FuelChamberMaxFuel// Store Fuel level
+GP=G2S/GCM*100 GP-=GP%1 FP=F2S/FCM*100 FP-=FP%1 // Gas&Rod Percents
+IF F2L==0 THEN RT="\n"+"Rod "+FP+"%"+"\n"+" Offline" END // gen off
+IF G2L==0 THEN GT="\n"+"Gas "+GP+"%"+"\n"+" Stopped" END // stopped
+GUR=:G GUR-=GUR%1 PP="\n"+"Gen "+GUR+"%" // Gen %
+:System=PP+RT+GT //Output to display named System
+// **Needs Pro or Adv chip** Unused lines still need to execute
+// Line 11-12 Rod&gas/sec 13-18 propellant&Fuel HH:MM:SS parse
+// Line 19-20 Format Gaspersec and Fuelpersec for display
+G2L=G2S-:GasNetworkStoredResource G2L/=2 durG=G2S/G2L
+F2L=F2S-:FuelChamberFuel F2L/=2 durF=F2S/F2L
+Sg=durG%60 durG-=Sg durG/=60 Sg-=Sg%1 IF Sg<10 THEN Sg="0"+Sg END
+Mg=durG%60 durG-=Mg durG/=60 Mg-=Mg%1 IF Mg<10 THEN Mg="0"+Mg END
+Hg=durG%24 durG-=Hg durG/=24 Hg-=Hg%1 IF Hg<10 THEN Hg="0"+Hg END
+Sf=durF%60 durF-=Sf durF/=60 Sf-=Sf%1 IF Sf<10 THEN Sf="0"+Sf END
+Mf=durF%60 durF-=Mf durF/=60 Mf-=Mf%1 IF Mf<10 THEN Mf="0"+Mf END
+Hf=durF%24 durF-=Hf durF/=24 Hf-=Hf%1 IF Hf<10 THEN Hf="0"+Hf END
+GT="\n"+"Gas "+GP+"%"+"\n"+Hg+"h:"+Mg+"m"
+RT="\n"+"Rod "+FP+"%"+"\n"+Hf+"h:"+Mf+"m"
+
+//GUR=:G GUR-=GUR%1 PP="\n"+"Gen "+GUR+"%" // Gen %
+//change :G to whatever your GeneratorUnitRate is called

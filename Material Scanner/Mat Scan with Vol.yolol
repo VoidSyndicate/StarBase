@@ -1,0 +1,7 @@
+o=" Ore" c=" Crystal" n="\n" f="" :Scan=1/(1-:Volume*:Scanner>0) goto1
+f+=:Material-o-c+n+:Volume/1728+n goto3-:Index++<:ScanResults
+:Scanner*=:Continuous :Reset=1 :Scanned=f goto1
+
+// Rename `Active` -> `Scanner` on your Material Point Scanner, set up
+// a text panel `Scanned`, an activation button `Scanner`, and a
+// button `Continuous` to toggle between single and continuous scans.

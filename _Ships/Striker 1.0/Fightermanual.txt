@@ -1,0 +1,20 @@
+-----------------------------USER MANUAL------------------------------
+1. BUTTONS
+COCKPIT - open/close the canopy
+WIDE OUTLINE BUTTON - enables/disables headlights
+YOLOL - opens yolol rack (make sure to leave canopy open)
+RED BUTTON - weapon fire
+GREEN BUTTON - enables crosshair
+BIG WHITE BUTTON - turns on/off ship transponder
+SMALL WHITE BUTTON - controls turtle mode
+SMALL OUTLINE BUTTON - controls cruise mode
+2. USER INTERFACE
+Ship status contains: Stability (indicates whether ship is stable or
+unstable), Cooling type, warp class, durability errors and damage
+indicator. Fuel time and Prop Time is meassured in HH:MM:SS
+Pos is ISAN GPS, visit isan.to/isan.pdf for documentation
+Spare progress bars can be mapped to your desires.
+3. SUPPORT
+If something is unclear and you require our support, consider joining 
+our company's discord server: discord.gg/44BY5atT
+----------------------------Tegretta inc.-----------------------------

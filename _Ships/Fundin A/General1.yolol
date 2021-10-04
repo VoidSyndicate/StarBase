@@ -1,0 +1,19 @@
+if :PowerMode==1 then goto3 else :TCenter=4 :Mount=0 goto2 end
+:Info="For Mount usage: Activate PowerMode!" :MountButton=0 goto1
+:Info="\n"+"System Booting..."+"\n"+:GenRate+"%"
+if :GenRate==100 then goto5 else goto1 end
+:Info="Mount System ready!" :MountButton=1 :TCenter=0
+if :PowerMode==1 then goto5 else goto1 end
+
+
+
+
+
+
+
+
+
+
+
+
+

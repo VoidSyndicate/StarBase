@@ -1,0 +1,1 @@
+This is a list of default scripts we find in Starbase incase you lose your yolopads

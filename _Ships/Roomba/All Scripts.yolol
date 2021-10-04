@@ -1,0 +1,39 @@
+Button Indicator Script
+
+If :Approach==1 then :Acheck=1 goto2 else :Acheck=0 goto1 end
+If :CRFD<:CRFSL then :AGoodC=2 :AGood=0 goto1 end
+If :CRFD==:CRFSL then :AGoodC=0 :AGood=1 goto1 end
+
+====================
+
+Approach Script
+
+:CRFSL=500
+If :Approach==1 then :Cruise=10 :FcuF=0 goto3 else goto1 end
+If :CRFD<9 then :FcuB=20 goto2 end
+If :CRFD<:CRFSL then :FcuF=:CRFD/25 goto2 end
+goto1
+
+=======================================
+
+Align Assistance Script
+
+:RFSL=400
+If :LineUp==1 then goto3 else goto1 end
+If :12RFD<:RFSL then :FcuUD=25 goto2 end
+If :3RFD<:RFSL then :FcuRL=-25 goto2 end
+If :6RFD<:RFSL then :FcuUD=-25 goto2 end
+If :9RFD<:RFSL then :FcuRL=25 goto2 end
+If :11RFD<:RFSL or :1RFD<:RFSL then :FcuUD=25 goto2 end
+If :7RFD<:RFSL or :5RFD<:RFSL then :FcuUD=-25 goto2 end
+If :10RFD<:RFSL or :8RFD<:RFSL then :FcuRL=25 goto2 end
+If :2RFD<:RFSL or :4RFD<:RFSL then :FcuRL=-25 goto2 end
+goto2
+
+==========================
+
+Lasers and Ore collector Script
+
+:MNLPitch=-10 :RFMSD=8
+If :RFML==1 then goto3 else goto1 end
+If :RFMLD<8 then :MNL=1 :ore=1 goto3 else :MNL=0 :Ore=0 goto1 end

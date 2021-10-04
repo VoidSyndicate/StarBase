@@ -1,0 +1,3 @@
+L=:FcuRightLeft<0 R=:FcuRightLeft>0 U=:FcuUpDown>0 D=:FcuUpDown<0
+JU="\n\n" SB="     " SM="  " 
+:Movement=JU+SB+U+JU+SM+L+SB+R+JU+SB+D goto1

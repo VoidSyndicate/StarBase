@@ -1,0 +1,4 @@
+:TotalBatteries=:Bat*16
+TL=:Rod1+:Rod2+:Rod3+:Rod4+:Rod5+:Rod6+:Rod7+:Rod8+:Rod9+:Rod10+:Rod11
+TR=:Rod12+:Rod13+:Rod14+:Rod15+:Rod16+:Rod17+:Rod18+:Rod19+:Rod20
+:TotalRods=TR+TL :GeneratedPower=:GRATE1*100+:GRATE2*100 goto 1

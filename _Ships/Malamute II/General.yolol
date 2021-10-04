@@ -1,0 +1,19 @@
+:Batteries=:Battery*24 
+:TotalRods=:FuelRod1+:FuelRod2+:FuelRod3+:FuelRod4
+GP=(:Generator1+:Generator2+:Generator3+:Generator4)
+GP=GP+(:Generator5+:Generator6+:Generator7+:Generator8)
+:GeneratedPower=GP*10 goto 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+

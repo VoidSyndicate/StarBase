@@ -1,0 +1,5 @@
+if :mOn == 0 then goto1 end
+if :mSON==1 then :tRO+=:tRD else :tR=0 :MiningSwivel=:wm10 goto1 end
+if :tRO>=5 or :tRO<=-5 then :tRD*=-1 end :tR=:tRO :MiningSwivel=:tRO
+goto1
+//Mining Swivel Automation

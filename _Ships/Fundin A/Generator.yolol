@@ -1,0 +1,19 @@
+if :PowerMode==0 then goto2 else goto3 end
+:GenLim = 1000 - :StoredBatteryPower / 10 goto 1
+:GenLim = 100 goto1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

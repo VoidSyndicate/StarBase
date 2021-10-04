@@ -1,0 +1,4 @@
+if :Mining == 1 then goto 2 else goto 1 end
+:DR = 1 :GeneratorUnitRateLimit = 100
+
+:Turrets = 0 :Lasers = 1 goto 1

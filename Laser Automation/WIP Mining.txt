@@ -1,0 +1,47 @@
+RASTER-BASED
+------------
+1: IF :Automine==1 THEN goto 3 END
+2: :MLR=-180 :MLP=:MinPitch :MLRD=1 :MLPD=1 goto 1
+3: IF :MLRD==1 THEN goto 4 ELSE goto 5 END
+4: IF :MLCR>=180 THEN goto 6 ELSE :MLR=180 goto 1 END
+5: IF :MLCR<=-180 THEN goto 6 ELSE :MLR=-180 goto 1 END
+6: IF :MLPD==1 THEN goto 7 ELSE goto 8 END
+7: IF :MLP>=:MaxPitch THEN :MLPD=-1 ELSE :MLP+=:Delta END goto 9
+7: IF :MLP<=:MinPitch THEN :MLPD=1 ELSE :MLP-=:Delta END goto 9
+8: :MLRD *= -1 goto 1
+
+*Instructions*
+- Rename as follows:
+  - TurretRotation -> MLR
+  - TurretCurrentRotation -> MLCR
+  - TurretPitch -> MLP
+- Change your turret's rotation limits appropriately. However, do not touch the cradle's pitch limits.
+
+- Add a YOLOL Memory Chip with the following fields
+  - MLRD = 1
+  - MLPD = 1
+  - MaxPitch = (Ship-dependent)
+  - MinPitch = (Ship-dependent)
+  - Delta = (How many degrees it pitches between rows, I use 0.2)
+
+RADIAL-BASED
+------------
+1: :turret="Rot: "+:mlcr+"\nPitch: "+:mlcp+"\nLaser: "+:mlaser delta=0.5
+2: minPitch=75 IF :automine==1 THEN goto4 ELSE goto3 END
+3: :mlp=90 :mlr=0 goto1 // Initial position
+4: IF :mlcr>=-60 AND :mlr==0 THEN :mlr=120 END
+5: IF :mlcr>=60 AND :mlr==120 THEN :mlr=-120 END
+6: IF :mlcr>=-180 AND :mlcr<0 AND :mlr==-120 THEN :mlr=0 :mlp-=delta END
+7: IF :mlp <= minPitch THEN :automine=0 :mlaser=0 END goto1 //Shutdown
+
+A text panel can be added to show the turret's status.
+
+*Instructions*
+- Rename as follows:
+  - Everything from the raster script
+  - MiningLaserOn -> MLaser
+  - PanelValue -> Turret
+
+MaxPitch, MinPitch and Delta could alternatively be set to levers or buttons.
+
+Written by Arkhonus

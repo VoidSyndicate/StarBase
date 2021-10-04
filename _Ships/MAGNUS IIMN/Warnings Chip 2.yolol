@@ -1,0 +1,5 @@
+//WARNINGS 2
+if :GeneratedPower<5000 then :GP=0 goto 2  end
+if :GeneratedPower<9800 then :GP=1 goto 2  end
+if :GeneratedPower>9800 then :GP=2 goto 2  end
+goto 2

@@ -1,0 +1,11 @@
+if :mAuto==1 then :rOn=1 :mOn=:RD<=23 goto 4 end
+if :mMan==1 then :mOn=1 goto8 else :mOn=0 :MiningAngle=:wm9 goto1 end
+//Automatic Mining Pitch
+p=3.142 b=0.571 c=57.295
+r=:rD-2.2 t=r/5.7 p=90-((b*t+t*t)/(1+2*b*t+t*t)*c*(p/2)) 
+if p>70 then :tP=70 else :tP=p end :MiningAngle=:tP goto1
+//Manual Mining Pitch Handling
+if :mAn==1 and :mPm>0 then :mAn=0 :mPM-=5 end :tP=:mPm
+if :mAp==1 and :mPm<70 then :mAp=0 :mPM+=5 end :tP=:mPm
+:MiningAngle=:mPm goto1
+//Mining Handling

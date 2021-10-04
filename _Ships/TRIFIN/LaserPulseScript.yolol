@@ -1,0 +1,5 @@
+// Laser pulser script - Mutleyx
+:laserL=0 :laserR=0 :TurretPitch=-10 //:Collect=0
+if :laser == 0 then goto 3 end :Cruise=100 :collect=1
+:laserR=0 :laserL=1 if :laser==0 then goto 2 end
+:laserR=1 :laserL=0 if :laser==0 then goto 2 end goto 4

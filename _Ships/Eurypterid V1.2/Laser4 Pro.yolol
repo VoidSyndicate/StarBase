@@ -1,0 +1,11 @@
+HPRH = :DL * sin(:RTT)
+RFL = :DL * cos(:RTT)
+RFV = RFL * sin(:PTT)
+RFH = RFL * cos(:PTT)
+MLH = 9.24 - RFH
+MLV = 2.4 - RFV
+HPLH = 9 - HPRH
+MLC = SQRT((HPLH)^2+(MLH)^2)
+:TR2A = atan(MLH/HPLH) * -1
+:P2A = asin(MLV/MLC) * -1
+goto 1

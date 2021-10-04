@@ -1,0 +1,19 @@
+if :Shutdown==0 then :AutoPower=0 :AutoRods=0 end goto 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

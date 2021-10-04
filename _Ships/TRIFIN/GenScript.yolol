@@ -1,0 +1,19 @@
+// General ship script - Mutleyx
+b=0
+fr=2*(100-:Battery/100)+(50*:Collect) :FR1=fr*1.5 :FR2=fr :FR3=fr*0.5
+if :door and not :cruise and :FcuForward>0 then :door=0 end
+:approachFlash=:approach and :RangeAhead<500
+if :Battery>9999 then b++ else b=0 end if b>300 then :Collect=0 end
+:BeaconWarn=:Beacon and :insideSafeZone==0 goto 3
+
+
+
+
+
+
+
+
+
+
+
+

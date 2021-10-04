@@ -1,0 +1,16 @@
+// Autopilot to radar target script - Mutleyx
+a=0 sf=6 df=1.2 lc=0 q=0.5 m=1000000 z=3000
+
+:RLA=88 f=sf n=7
+c=a+2*(p>0)+4*(y>0)  if c!=lc then f=sf end lc=c goto4+:autopilot*2
+if :TF and (:TU+:TD+:TP+:TS)==0 then n=8 a=0 y=0 p=0 goto15 end goto n
+if :TB then :S=1 n=7 a=1 p=0 y=50 f=5 goto15 end  :S=0
+if :TP or :TS then n=8 a=1 p=0 y=f*q-(:TP*2*f*q) goto15 end
+if :TU or :TD then n=9 a=1 y=0 p=f-(:TD*2*f) goto15 end n=7 goto5
+
+
+
+
+
+:FcuRotationalPitch=p :FcuRotationalYaw=y if a!=la then f=sf end 
+if a then f*=df end g=(m-:RFR)>z :FcuForward=100*g*(1-a) goto5

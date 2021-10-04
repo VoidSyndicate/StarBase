@@ -1,0 +1,4 @@
+// Radar display script
+
+a=:TU b=:TP c=:TF d=:TS e=:TD f=:TB
+:Radar="\n\n    "+a+"\n  "+b+"|"+c+"|"+d+"  "+f+"\n    "+e  goto3

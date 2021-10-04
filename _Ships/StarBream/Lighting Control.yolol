@@ -1,0 +1,20 @@
+delay=4
+:LampExt7=:Lights_ext :LampExt1=:Lights_ext
+:LampExt3=0 :LampExt2=:Lights_ext t=0 next=4 goto 20
+:LampExt2=0 :LampExt3=:Lights_ext t=0 next=5 goto 20
+:LampExt3=0 :LampExt4=:Lights_ext t=0 next=6 goto 20
+:LampExt4=0 :LampExt5=:Lights_ext t=0 next=7 goto 20
+:LampExt5=0 :LampExt6=:Lights_ext t=0 next=8 goto 20
+:LampExt6=0 :LampExt5=:Lights_ext t=0 next=9 goto 20
+:LampExt5=0 :LampExt4=:Lights_ext t=0 next=10 goto 20
+:LampExt4=0 :LampExt3=:Lights_ext t=0 next=2 goto 20
+
+
+
+
+
+
+
+
+
+t++ if t<delay then goto 20 end goto next

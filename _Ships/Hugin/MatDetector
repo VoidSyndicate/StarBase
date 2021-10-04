@@ -1,0 +1,19 @@
+i=0  Scan="" :Res=i :Mats="Nothing detected!" :Ind=0
+if :Scan==1 then goto 3 end else goto 1 end
+:LastScan="<Analysing>" :Vol="" :CW=5
+:Ind=i Scan=Scan+:Mats-" Ore"-" Crystal"+"\n" 
+Scan=Scan+:Vol+"\n\n" :LastScan=Scan i=i+1
+if :Res<=i then :Scan=0 goto1 end else goto4 end
+
+
+
+
+
+
+
+
+
+
+
+
+
