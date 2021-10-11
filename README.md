@@ -43,6 +43,7 @@ Starbase Repository for YOLO Scripts and other useful information:
 * lesWAV: https://www.reddit.com/r/starbase/comments/p5zogx/i_present_you_leswav_wacky_astro_vehicles_heavy/
 * GIT Repo of Ships: https://github.com/xymor/awesome-starbase#ships
 * McFly: https://www.reddit.com/r/starbase/comments/pv4vbt/free_blueprints_for_new_players_mcfly_mark_iiiiv/
+* HKAS Little Dolphin: https://sb-creators.org/makers/%5BHKAS%5D/ship/HKAS%20Little%20Dolphin
 ### Company Discord / Sites
 * OKIM Inducstries Discord: https://discord.gg/UjknN9Hh
 * Vintage Incorporated Discord: https://discord.gg/FeDApCC53H
