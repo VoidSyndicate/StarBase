@@ -36,6 +36,7 @@ Starbase Repository for YOLO Scripts and other useful information:
 * Eos Moon Chart: https://i.redd.it/blik7iy35ln71.png
 * Another Map of Moons: https://i.redd.it/9avl2u7acpp71.png
 ### Free Ship Blueprints
+* Ergomaniac (Many Ships): https://github.com/vinteo/starbase-ships/
 * 2 Miners: https://www.reddit.com/r/starbase/comments/pnl7c3/free_ship_miner/
 * CatFish: https://www.reddit.com/r/starbase/comments/p7c1fw/many_people_asked_for_blueprint_of_my_catfish_you/
 * X Wing: https://www.reddit.com/r/starbase/comments/pepf2t/xwing_blueprint/
